@@ -1,0 +1,33 @@
+spring:
+  # 配置数据源
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: Gdmt123456
+    url: jdbc:mysql://39.101.143.227:3306/gdmt
+
+  # 配置消息中间件
+  rabbitmq:
+    host: 39.101.143.227
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
+
+  # redis配置
+  redis:
+    host: 39.101.143.227
+
+# mybatis配置
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: on
+
+# 更改端口
+server:
+  port: 8097
+
+#公钥的文件路径
+rsa:
+  key:
+    pubKeyFile: /usr/key/public_key

@@ -1,0 +1,22 @@
+server:
+  port: 9012
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: Gdmt123456
+    url: jdbc:mysql://39.101.143.227/gdmt
+  rabbitmq:
+    host: 39.101.143.227
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: on
+
+#公钥的文件路径
+rsa:
+  key:
+#    #windows开发测试
+#    pubKeyFile: D:/key/public_key
+    pubKeyFile: /usr/key/public_key

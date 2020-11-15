@@ -1,0 +1,30 @@
+server:
+  port: 9005
+
+spring:
+  application:
+    name: payment
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://39.101.143.227:3306/gdmt
+    username: root
+    password: Gdmt123456
+  rabbitmq:
+    host: 39.101.143.227
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
+logging:
+  level:
+    com: debug
+
+#公钥的文件路径
+rsa:
+  key:
+    pubKeyFile: /usr/key/public_key

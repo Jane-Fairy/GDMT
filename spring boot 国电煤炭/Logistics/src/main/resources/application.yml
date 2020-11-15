@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: order_trade
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://39.101.143.227:3306/gdmt
+    username: root
+    password: Gdmt123456
+  mvc:
+    date-format: yyyy-MM-dd
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
+#公钥的文件路径
+rsa:
+  key:
+    pubKeyFile: /usr/key/public_key
+
+server:
+  port: 8095

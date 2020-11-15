@@ -1,0 +1,28 @@
+spring:
+  # 配置数据源
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: Gdmt123456
+    url: jdbc:mysql://39.101.143.227:3306/gdmt
+
+# mybatis配置
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: on
+# 分页功能开启
+pagehelper:
+  helper-dialect: mysql
+  reasonable: false
+  support-methods-arguments: true
+  params: count=countSql
+
+# 更改端口
+server:
+  port: 8098
+
+#公钥的文件路径
+rsa:
+  key:
+    pubKeyFile: /usr/key/public_key
+

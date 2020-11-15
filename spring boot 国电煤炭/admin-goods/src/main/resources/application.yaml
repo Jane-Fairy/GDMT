@@ -1,0 +1,48 @@
+spring:
+  # 配置数据源
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: Gdmt123456
+    url: jdbc:mysql://39.101.143.227:3306/gdmt
+
+  # 配置消息中间件
+  rabbitmq:
+    host: 39.101.143.227
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
+
+  # 配置邮箱
+  mail:
+    host: smtp.163.com
+    username: i102443@163.com
+    password: RBSRPAGBZYUODXTG
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true
+
+  # es配置
+  elasticsearch:
+    rest:
+      uris: http://39.101.143.227:9200
+      read-timeout: 60s
+
+# mybatis配置
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: on
+
+# 更改端口
+server:
+  port: 9010
+
+#公钥的文件路径
+rsa:
+  key:
+#    #windows开发测试
+#    pubKeyFile: D:/key/public_key
+    pubKeyFile: /usr/key/public_key

@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    username: root
+    password: Gdmt123456
+    url: jdbc:mysql://39.101.143.227:3306/gdmt
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  mvc:
+    date-format: yyyy-MM-dd HH:mm:ss
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+server:
+  port: 8091
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
+#公钥的文件路径
+rsa:
+  key:
+    pubKeyFile: /usr/key/public_key

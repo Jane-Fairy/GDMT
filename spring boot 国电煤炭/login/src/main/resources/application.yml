@@ -1,0 +1,26 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: user_login
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://39.101.143.227:3306/gdmt
+    username: root
+    password: Gdmt123456
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
+logging:
+  level:
+    com: debug
+
+#公/密钥的文件路径
+rsa:
+  key:
+  #windows开发测试
+    pubKeyFile: /usr//key/public_key
+    priKeyFile: /usr/key/private_key
